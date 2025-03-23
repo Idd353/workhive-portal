@@ -1,8 +1,7 @@
-
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
 import { motion } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -54,9 +53,14 @@ const Login = () => {
                   className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full"> 
                 Sign in
               </Button>
+              <div className="flex justify-center">
+                <Link to="/forgot-password" className="text-sm text-blue-600 hover:text-blue-500">
+                  Forgot Password?
+                </Link>
+              </div>
             </form>
           </CardContent>
           <CardFooter className="flex justify-center space-x-1">
